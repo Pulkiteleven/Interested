@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127119852760",
+    "project_id": "interested-5e82d",
+    "storage_bucket": "interested-5e82d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127119852760:android:a04eebad0f15bd4021c3ad",
+        "android_client_info": {
+          "package_name": "com.inertia.interested.interested_two"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127119852760-emafnf4rvi3el7r1qd6knnrsdkuis1jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD01sbn8GBK9lRPxewvBa7DIuMjWQFRAAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127119852760-emafnf4rvi3el7r1qd6knnrsdkuis1jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
