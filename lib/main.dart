@@ -1,3 +1,5 @@
+// @dart=2.9
+
 import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +13,7 @@ Future<void> main() async{
 
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
 
 
 class splash extends StatefulWidget {
-  const splash({Key? key}) : super(key: key);
+  const splash({Key key}) : super(key: key);
 
   @override
   State<splash> createState() => _splashState();

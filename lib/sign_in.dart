@@ -2,9 +2,9 @@ import 'dart:io';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:interested_two/MainActivities/GetStarted.dart';
 import 'package:interested_two/MainActivities/HomeScreen.dart';
 import 'package:interested_two/SignUp.dart';
-import 'package:interested_two/Usefull%20widget/TextField.dart';
 import 'package:interested_two/main.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -22,11 +22,22 @@ class SignIn extends StatefulWidget {
 class _SignInState extends State<SignIn> {
   final _auth = FirebaseAuth.instance;
   final formKey = GlobalKey<FormState>();
+  User? user = FirebaseAuth.instance.currentUser;
+
+
+  @override
+  void initState() {
+    if(user != null){
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) =>
+              getStarted()));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     Color bg = Color(0xFF131419);
-    Color text = Color(0xFF64B5F6);
+    Color text = Color(0xFFB300FF);
     String email = "";
     String password = "";
 
@@ -253,7 +264,7 @@ class _SignInState extends State<SignIn> {
         Text("Login Succesfull"))),
         Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (context) =>
-                HomeScreen()))
+                getStarted()))
       });
     }
   }
